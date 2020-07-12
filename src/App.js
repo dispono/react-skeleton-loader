@@ -1,24 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SkeletonLoader from './SkeletonLoader';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ margin: '15px' }}>
+      <SkeletonLoader style={{ width: '100px', height: '100px', borderRadius: '50%', marginBottom: '15px' }} />
+      <SkeletonLoader style={{ width: '200px', height: '15px', marginBottom: '15px' }} />
+      <SkeletonLoader style={{ width: '200px', height: '15px', marginBottom: '15px' }} />
     </div>
   );
 }
